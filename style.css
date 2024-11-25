@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* -------------main content------------ */
+.main-content {
+    padding-left: 270px;
+}
+/* ---------section--------- */
+section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+/* .hidden {
+    display: none;
+} */
+/* .padd-15{
+      padding-left: 15px;
+      padding-right: 15px;
+} */
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+}
+.row {
+    display: flex;
+    /* flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative; */
+}
+
+/* ----------aside--------- */
+.aside {
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    height: 100%;
+    padding: 30px;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.aside .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.aside .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    /* background: purple; */
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.aside .logo a span {
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.aside .logo a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* border-bottom: 5px solid purple; */
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+.aside .logo a::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* border-bottom: 5px solid purple; */
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    rightt: 0;
+}
+ul li {
+    list-style: none;
+}
+.aside .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--skin-color);
+    top: -6px;
+    left: 0;
+    width: 18px;
+}
+.aside .nav-toggler span::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--skin-color);
+    top: 6px;
+    left: 0;
+    width: 18px;
+}
+
+.aside .nav {
+    margin-top: 50px;
+}
+.aside .nav li {
+    margin-bottom: 20px;
+    /* background: red; */
+    display: block;
+}
+.aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+.aside .nav li a.active {
+    color: var(--skin-color);
+}
+.aside .nav li a i {
+    margin-right: 15px;
+}
+
+/* -------home------- */
+.home-section {
+    height: 100vh;
+
+    color: var(--text-black-900);
+}
+.home-section .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.home-section .home-img {
+    height: 0 0 40%;
+    max-width: 40%;
+    /* background: purple; */
+    text-align: center;
+    position: relative;
+}
+.home-img::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: -20px;
+    bottom: -30px;
+}
+.home-img::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-left: 10px solid var(--skin-color);
+    border-top: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
+}
+.home-section .home-img img {
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    /* width: 400px; */
+}
+.home-container {
+    height: 100%;
+}
+.home-row {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+h3.hello span {
+    font-family: "Clicker Script", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+h3.my-profession {
+    font-size: 26px;
+    margin: 15px 0;
+    margin-bottom: 30px;
+}
+.typing {
+    color: var(--skin-color);
+}
+.home-info p {
+    margin-bottom: 70px;
+    /* letter-spacing: 1px; */
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+.btn {
+    font-size: 18px;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    padding: 10px 20px;
+    border: 1px solid #9999;
+    border-radius: 40px;
+    color: #ffff;
+    background: var(--skin-color);
+}
+.btn:hover {
+    background: #ffff;
+    color: black;
+    border: 2px solid var(--skin-color);
+}
+
+/* ------------section container------------ */
+.about-section .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+      flex: 0 0 100%;
+      max-width: 100%;
+      /* font-size: 40px  ; */
+      background: purple;
+}
+
+/* .section-title{
+      flex: 0 0 100%;
+      max-width: 100%;
+      /* font-size: 40px  ; */
+      background: purple;
+} */
