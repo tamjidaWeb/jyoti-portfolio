@@ -290,8 +290,35 @@ h3.my-profession {
 .section-title {
       flex: 0 0 100%;
       max-width: 100%;
-      /* font-size: 40px  ; */
-      background: purple;
+      margin-bottom: 50px;
+      
+}
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 30px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
 }
 
 /* .section-title{
@@ -301,16 +328,40 @@ h3.my-profession {
       background: purple;
 } */
 
- .about-section .info {
+.about-section .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+}
+.about-section .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+}
+.about-section .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about-section .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about-section .about-content .about-text p{
+    font-weight: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+ .about-section .about-content .info {
    flex: 0 0 60%;
    max-width: 60%;
    margin-top: 40px;
 }
-.about-section .info-item{
+.about-section .about-content .info .info-item{
     flex: 0 0 50%;
     max-width: 50%;
 }
-.about-section  .skills{
+.about-section .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
@@ -318,6 +369,26 @@ h3.my-profession {
 }
 .about-section .info .info-item #email{
     width: 100%;
+}
+.about-section .info .info-item p{
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about-section .info .info-item p span{
+    font-weight: 400;
+    margin-left: 4px;
+    color: var(--text-black-700);
+}
+.buttons .btn{
+    margin-top: 20px;
+    margin-right: 10px;
+ 
+}
+.btn .hire-me{
+    padding: 0 30px;
 }
 /* .about-section .row{
     margin: 0;
