@@ -283,14 +283,15 @@ h3.my-profession {
 
 /* ------------section container------------ */
 .about-section .container {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 70px;
+    
 }
 
 .section-title {
       flex: 0 0 100%;
       max-width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       
 }
 .section-title h2{
@@ -340,7 +341,7 @@ h3.my-profession {
 }
 .about-section .about-content .about-text h3{
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: 700;
     color: var(--text-black-900);
 }
@@ -367,6 +368,39 @@ h3.my-profession {
     margin-top: 40px;
    
 }
+.about-section .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about-section .about-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 5px ;
+    width: 100%;
+    position: relative;
+}
+.about-section .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about-section .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about-section .about-content .skills .skill-item{
+    margin-bottom: 15px;
+}
 .about-section .info .info-item #email{
     width: 100%;
 }
@@ -390,7 +424,9 @@ h3.my-profession {
 .btn .hire-me{
     padding: 0 30px;
 }
-/* .about-section .row{
-    margin: 0;
-    overflow-x: hidden;
-} */
+.about-section .about-content .education,
+.about-section .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
