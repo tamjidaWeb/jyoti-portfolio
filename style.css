@@ -36,9 +36,9 @@ section {
     padding: 0 30px;
     opacity: 1;
 }
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 /* .padd-15{
       padding-left: 15px;
       padding-right: 15px;
@@ -116,7 +116,7 @@ section {
     border-top: 5px solid var(--skin-color);
     border-right: 5px solid var(--skin-color);
     top: 0;
-    rightt: 0;
+    right: 0;
 }
 ul li {
     list-style: none;
@@ -297,6 +297,29 @@ h3.my-profession {
 /* .section-title{
       flex: 0 0 100%;
       max-width: 100%;
-      /* font-size: 40px  ; */
+      /* font-size: 40px  ;
       background: purple;
+} */
+
+ .about-section .info {
+   flex: 0 0 60%;
+   max-width: 60%;
+   margin-top: 40px;
+}
+.about-section .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about-section  .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+   
+}
+.about-section .info .info-item #email{
+    width: 100%;
+}
+/* .about-section .row{
+    margin: 0;
+    overflow-x: hidden;
 } */
