@@ -36,9 +36,9 @@ section {
     padding: 0 30px;
     opacity: 1;
 }
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 /* .padd-15{
       padding-left: 15px;
       padding-right: 15px;
@@ -116,7 +116,7 @@ section {
     border-top: 5px solid var(--skin-color);
     border-right: 5px solid var(--skin-color);
     top: 0;
-    rightt: 0;
+    right: 0;
 }
 ul li {
     list-style: none;
@@ -283,20 +283,233 @@ h3.my-profession {
 
 /* ------------section container------------ */
 .about-section .container {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 70px;
+    
 }
 
 .section-title {
       flex: 0 0 100%;
       max-width: 100%;
-      /* font-size: 40px  ; */
-      background: purple;
+      margin-bottom: 30px;
+      
+}
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 30px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
 }
 
 /* .section-title{
       flex: 0 0 100%;
       max-width: 100%;
-      /* font-size: 40px  ; */
+      /* font-size: 40px  ;
       background: purple;
 } */
+
+.about-section .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+}
+.about-section .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+  
+}
+.about-section .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about-section .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about-section .about-content .about-text p{
+    font-weight: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+ .about-section .about-content .info {
+   flex: 0 0 60%;
+   max-width: 60%;
+   margin-top: 40px;
+}
+.about-section .about-content .info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about-section .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+   
+}
+.about-section .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about-section .about-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 5px ;
+    width: 100%;
+    position: relative;
+}
+.about-section .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about-section .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about-section .about-content .skills .skill-item{
+    margin-bottom: 15px;
+}
+.about-section .info .info-item #email{
+    width: 100%;
+}
+.about-section .info .info-item p{
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about-section .info .info-item p span{
+    font-weight: 400;
+    margin-left: 4px;
+    color: var(--text-black-700);
+}
+.buttons .btn{
+    margin-top: 20px;
+    margin-right: 10px;
+ 
+}
+.btn .hire-me{
+    padding: 0 30px;
+}
+.about-section .about-content .education,
+.about-section .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    
+}
+.about-section .about-content h3.title{
+    font-size: 24px;
+    margin-top: 30px;
+    color: var(--text-black-900);
+    font-weight: 700;
+}
+
+.about-section .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.about-section .about-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-black-50);
+    width: 100%;
+    position: relative;
+}
+.shadow-box{
+    box-shadow: 0 0 20px rgba(48, 77, 48, .15);
+}
+.about-section .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 30px;
+}
+.about-section .about-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.about-section .about-content .timeline .timeline-item::before{
+    content: '';
+    top: 0;
+    left: 7px;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--skin-color);
+}
+.about-section .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about-section .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about-section .about-content .timeline .fa{
+    margin-left: 5px;
+}
+.about-section .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.about-section .about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+.about-section .about-content .service-section .container .section-title {
+    padding-top: 200px;
+    margin-top: 100px;
+}
+.row-parent{
+    margin-top: 40px;
+    display: flex;
+}
+.row-parent .service-item{
+    margin-bottom: 30px;
+}
