@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="color-1.css">
+      <link rel="stylesheet" href="style.switcher.css">
 <body>
       <!-- Main container start -->
       <div class="main-container">
@@ -442,7 +443,7 @@
                              <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGE</h4>
             
                              <!-- contact form  -->
-                              <div class="row"></div>
+                              <div class="row">
                               <div class="contact-form">
                                     <div class="row">
                                           <div class="form-item col-6 padd-15">
@@ -468,7 +469,7 @@
                                     <div class="row">
                                           <div class="form-item col-12 padd-15">
                                                 <div class="form-group">
-                                                      <textarea name=" "  class="form-control" id="" placeholder="Message"></textarea>
+                                                      <textarea name=" "  class="form-control" id="message" placeholder="Write your Message"></textarea>
                                                 </div>
                                           </div>
                                    </div>
@@ -480,13 +481,37 @@
             
                               </div>
                         </div>
+                        <!-- contact form end -->
+                        </div>
             
-                   </section>
-                  
+                   </section>    
             </div>
-
-
      </div>
+<!-- style switcher start -->
+ <div class="style stwitcher">
+      <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-skin"></i>
+
+      </div>
+      <div class="day-night s-icon">
+            <div class="fas fa-moon">
+                  <h4>Theme Color</h4>
+            <div class="colors">
+                  <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                  <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                  <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                  <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                  <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                 
+
+            </div>
+            </div>
+      </div>
+
+</div>
+<!-- style switcher end -->
+
+     <script src="script.js"></script>
       
 </body>
 </html>

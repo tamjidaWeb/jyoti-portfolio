@@ -667,6 +667,9 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
 }
+.contact .contact-form .col-12 #message{
+    max-width: 100%;
+}
 .contact .contact-form .form-item {
     margin-top: 30px;
 }
@@ -770,4 +773,8 @@ h3.my-profession {
     .row-main {
         grid-template-columns: 1fr; /* Single column for very small screens */
     }
+    .form-item {  
+        flex: 0 0 100%; /* Full width on small screens */  
+        max-width: 100%; /* Ensure full width is honored */  
+    } 
 }
