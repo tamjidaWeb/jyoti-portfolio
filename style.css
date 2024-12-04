@@ -699,6 +699,33 @@ h3.my-profession {
     padding: 0 60px;
 }
 
+ .style-stwitcher{
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    border-radius: 15px;
+    z-index: 101;
+    transition: all 0.3s ease;
+ }
+ .style-stwitcher .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100% ;
+    border: 1px solid var(--text-black-900);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+ }
 @media (max-width: 1199px) {
     .aside {
         left: -270px;
