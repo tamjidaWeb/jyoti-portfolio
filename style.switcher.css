@@ -1,14 +1,15 @@
 .style-switcher{
       position: fixed;
       right: 0;
-      top: 60px;
+      top:50px;
       padding: 15px;
       width: 200px;
       border: 1px solid var(--bg-black-50);
       background: var(--bg-black-100);
       border-radius: 15px;
       z-index: 101;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease;
+      transform: translateX(100%);
    }
 
    .style-switcher .s-icon{
@@ -24,7 +25,10 @@
       margin-right: 25px;
       cursor: pointer;
       transition: all 0.3s ease;
-      border-radius: 5px;
+      border-radius: 50%;
+   }
+   .style-switcher .open{
+      transform: translateX(-25px);
    }
 
     .style-switcher .s-icon i{
@@ -48,11 +52,11 @@
       font-weight: 600;
       text-transform: capitalize;
    }
-   /* .style-switcher .colors{
+   .style-switcher .colors{
       display: flex;
       align-items: center;
-      justify-content: center;
-   } */
+      justify-content: space-between;
+   }
    .style-switcher .colors span{
       display: inline-block;
       height: 30px;
@@ -60,6 +64,21 @@
       border-radius: 50%;
       border: 1px solid var(--skin-color);
 
+   }
+   .style-switcher .color-1{
+      background: #37b182;
+   }
+   .style-switcher .color-2{
+      background: #fa5b0f;
+   }
+   .style-switcher .color-3{
+      background:#37b182;
+   }
+   .style-switcher .color-4{
+      background: #f021b2;
+   }
+   .style-switcher .color-5{
+      background: #1854b4;
    }
 
    
