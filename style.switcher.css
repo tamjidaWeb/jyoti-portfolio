@@ -44,6 +44,22 @@
    .style-switcher h4{
       margin: 0 0 10px;
       color: var(--text-black-700);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+   }
+   /* .style-switcher .colors{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   } */
+   .style-switcher .colors span{
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--skin-color);
+
    }
 
    
