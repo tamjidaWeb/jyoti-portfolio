@@ -27,7 +27,7 @@
       transition: all 0.3s ease;
       border-radius: 50%;
    }
-   .style-switcher .open{
+   .style-switcher.open{
       transform: translateX(-25px);
    }
 
