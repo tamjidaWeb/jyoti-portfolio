@@ -259,6 +259,9 @@ ul li {
 h3.hello {
     font-size: 28px;
     margin: 15px 0;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .3s ;
 }
 h3.hello span {
     font-family: "Clicker Script", cursive;
@@ -270,6 +273,9 @@ h3.my-profession {
     font-size: 26px;
     margin: 15px 0;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .3s ;
 }
 .text {
     color: var(--skin-color);
@@ -317,8 +323,8 @@ h3.my-profession {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
+    animation: glowing 80s linear infinite;
+    transition: opacity .9s ease-in;
     border-radius: 40px;
     opacity: 1;
 }
@@ -750,12 +756,28 @@ h3.my-profession {
 .contact .contact-form .form-item textarea.form-control {
     height: 120px;
 }
-/* .contact .contact-form .btn {
-    height: 50px;
-    padding: 15px 50px;
-    transition: all 0.3s ease;
-} */
 
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
  
 
