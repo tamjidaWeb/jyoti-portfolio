@@ -13,9 +13,9 @@ window.addEventListener("scroll", () => {
 
 //  theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color) {
+function setActiveStyle(colors) {
     alternateStyles.forEach(style => {
-        if (color === style.getAttribute('title')) {
+        if (colors === style.getAttribute('title')) {
             style.removeAttribute("disabled");
         } else {
             style.setAttribute("disabled", "true");
