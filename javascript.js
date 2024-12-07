@@ -45,3 +45,15 @@ window.addEventListener("load", ()=>{
             dayNight.querySelector('i').classList.add("fa-moon");
       }
 })
+
+
+
+// document.getElementById("downloadCvButton").addEventListener("click", () => {
+//       const fileUrl = "resume.pdf"; // Replace with your CV file path
+//       const anchor = document.createElement("a"); // Create a temporary <a> element
+//       anchor.href = fileUrl;
+//       anchor.download = "Download.pdf"; // Specify the file name
+//       anchor.click(); // Trigger the download
+//       anchor.remove(); // Clean up the DOM
+//   });
+  
