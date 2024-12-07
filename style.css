@@ -7,6 +7,10 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.5;
     font-size: 16px;
@@ -80,7 +84,7 @@ section {
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 0;
 }
 .aside .logo {
     position: absolute;
@@ -108,7 +112,6 @@ section {
     position: absolute;
     width: 20px;
     height: 20px;
-    /* border-bottom: 5px solid purple; */
     border-bottom: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
     bottom: 0;
@@ -128,7 +131,7 @@ section {
 ul li {
     list-style: none;
 }
-.aside .nav-toggler {
+/* .aside .nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
@@ -141,16 +144,16 @@ ul li {
     display: none;
     align-items: center;
     justify-content: center;
-}
-
+} */
+/* 
 .aside .nav-toggler span {
     height: 2px;
     width: 18px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
-}
-.aside .nav-toggler span::before {
+} */
+/* .aside .nav-toggler span::before {
     content: "";
     position: absolute;
     height: 2px;
@@ -158,8 +161,8 @@ ul li {
     top: -6px;
     left: 0;
     width: 18px;
-}
-.aside .nav-toggler span::after {
+} */
+/* .aside .nav-toggler span::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -167,7 +170,7 @@ ul li {
     top: 6px;
     left: 0;
     width: 18px;
-}
+} */
 
 .aside .nav {
     margin-top: 50px;
