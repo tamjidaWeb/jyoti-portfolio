@@ -196,10 +196,7 @@ ul li {
 
     color: var(--text-black-900);
 }
-/* .home-section .home-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-} */
+
 .row-main-one {
     display: flex;
     flex-direction: row;
