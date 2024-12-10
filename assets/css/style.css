@@ -761,6 +761,9 @@ h3.my-profession {
 .contact .contact-form .form-item textarea.form-control {
     height: 120px;
 }
+.row-flex{
+    display: flex;
+}
 
 
 @keyframes slideTop{
