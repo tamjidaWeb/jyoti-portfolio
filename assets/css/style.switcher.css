@@ -63,24 +63,8 @@
     border-radius: 50%;
     border: 1px solid var(--skin-color);
 }
-.style-switcher .color-1 {
-    background: #37b182;
-}
-.style-switcher .color-2 {
-    background: #fa5b0f;
-}
-.style-switcher .color-3 {
-    background: #37b182;
-}
-.style-switcher .color-4 {
-    background: #f021b2;
-}
-.style-switcher .color-5 {
-    background: #1854b4;
-}
 
-   
-   .style-switcher .color-1{
+   /* .style-switcher .color-1{
       background: purple;
    }
    .style-switcher .color-2{
@@ -94,14 +78,14 @@
    }
    .style-switcher .color-5{
       background: #1854b4;
-   }
+   } */
 
    
-@keyframes spin {  
+/* @keyframes spin {  
       from {  
           transform: rotate(0deg);  
       }  
       to {  
           transform: rotate(360deg);  
       }  
-  }  
+  }   */

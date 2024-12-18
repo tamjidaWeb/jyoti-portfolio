@@ -39,6 +39,18 @@ window.addEventListener("load", () => {
     }
 });
 
+const sidebar = document.querySelector(".aside");
+
+const logo = document.querySelector(".logo");
+logo.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
+
+
+
+
+
+
 // document.getElementById("downloadCvButton").addEventListener("click", () => {
 //       const fileUrl = "resume.pdf"; // Replace with your CV file path
 //       const anchor = document.createElement("a"); // Create a temporary <a> element
