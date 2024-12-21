@@ -1,4 +1,4 @@
-.style-switcher {
+/* .style-switcher {
     position: fixed;
     right: 0;
     top: 50px;
@@ -10,9 +10,9 @@
     z-index: 101;
     transition: transform 0.3s ease;
     transform: translateX(100%);
-}
+} */
 
-   .style-switcher .s-icon{
+   /* .style-switcher .s-icon{
       position: absolute;
       height: 40px;
       width: 40px;
@@ -26,8 +26,8 @@
       cursor: pointer;
       transition: all 0.3s ease;
       border-radius: 50%;
-   }
-   .style-switcher.open{
+   } */
+   /* .style-switcher.open{
       transform: translateX(-25px);
    }
 
@@ -62,7 +62,7 @@
     width: 30px;
     border-radius: 50%;
     border: 1px solid var(--skin-color);
-}
+} */
 
    /* .style-switcher .color-1{
       background: purple;
